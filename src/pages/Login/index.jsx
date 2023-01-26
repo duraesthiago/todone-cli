@@ -139,8 +139,8 @@ export function Login() {
         </div>
         <div className={styles.formInput}>
           <h3>
-            Não possui um usuário?{' '}
-            <a href="/createUser">Registre-se aqui!</a>
+            Não possui um usuário?
+            <a href="/createUser/">Registre-se aqui!</a>
           </h3>
         </div>
         <div className={styles.formInput}>
