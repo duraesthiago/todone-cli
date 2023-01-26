@@ -1,0 +1,9 @@
+.tags {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: rgb(215, 215, 215);
+  border-radius: 5px;
+  padding: 3px 10px;
+  text-align: center;
+}

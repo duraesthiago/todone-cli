@@ -1,0 +1,62 @@
+.createUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.createUser h1 {
+  font-size: 20px;
+}
+
+.createUser h3 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.img {
+  width: 40%;
+}
+
+.formInput {
+  height: 64px;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 1rem;
+}
+
+.formInput span {
+  font-size: 10px;
+  color: #808080;
+}
+
+.formInput input {
+  height: 100%;
+  flex: 1;
+  color: #fff;
+  background: #262626;
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.formInput input::placeholder {
+  color: #808080;
+}
+
+.formInput button {
+  height: 100%;
+  background: #1e6f9f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}
