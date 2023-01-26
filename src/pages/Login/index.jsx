@@ -138,18 +138,17 @@ export function Login() {
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
         <div className={styles.formInput}>
-          <h3>
-            Não possui um usuário?
-            <a href="/createUser">Registre-se aqui!</a>
-          </h3>
-        </div>
-        <div className={styles.formInput}>
           <button type="submit">Entrar</button>
         </div>
       </form>
-      <form action="/createUser">
-        <button type="submit">CRIAR</button>
-      </form>
+      <div className={styles.formInput}>
+        <h3>
+          Não possui um usuário?
+          <a href="https://todone-cli.onrender.com/createUser">
+            Registre-se aqui!
+          </a>
+        </h3>
+      </div>
     </div>
   );
 }
