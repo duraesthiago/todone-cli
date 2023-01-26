@@ -20,10 +20,25 @@
   width: 40%;
 }
 
+.formLogin {
+  max-width: 95%;
+}
+
+@media (min-width: 600px) {
+  .formLogin {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 900px) {
+  .formLogin {
+    max-width: 35%;
+  }
+}
+
 .formInput {
   height: 64px;
   width: 100%;
-  max-width: 736px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -59,4 +74,9 @@
   align-items: center;
   font-weight: 600;
   font-size: 18px;
+  margin-top: 10px;
+}
+
+a {
+  color: #808080;
 }

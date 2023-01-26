@@ -107,7 +107,11 @@ export function CreateUser() {
       {Object.keys(formErrors).length === 0 && isSubmitting && (
         <span>Login ok!</span>
       )}
-      <form onSubmit={handleSubmit} noValidate>
+      <form
+        onSubmit={handleSubmit}
+        noValidate
+        className={styles.formCreateUser}
+      >
         <div className={styles.formInput}>
           <label htmlFor="name"></label>
           <input

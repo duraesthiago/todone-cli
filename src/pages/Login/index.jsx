@@ -115,7 +115,11 @@ export function Login() {
       {Object.keys(formErrors).length === 0 && isSubmitting && (
         <span>Login ok!</span>
       )}
-      <form onSubmit={handleSubmit} noValidate>
+      <form
+        onSubmit={handleSubmit}
+        noValidate
+        className={styles.formLogin}
+      >
         <div className={styles.formInput}>
           <label htmlFor="email"></label>
           <input
@@ -142,15 +146,13 @@ export function Login() {
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
         <div className={styles.formInput}>
-          <h3>
-            Não possui um usuário?
-            <Link to="/createUser">Registre-se aqui!</Link>
-          </h3>
-        </div>
-        <div className={styles.formInput}>
           <button type="submit">Entrar</button>
         </div>
       </form>
+      <div className={styles.formInput}>
+        <h3>Não possui um usuário?</h3>
+        <Link to="/createUser">Registre-se aqui!</Link>
+      </div>
     </div>
   );
 }
