@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './login.module.css';
 import logo from '../../assets/logo.svg';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export function Login() {
@@ -77,6 +77,10 @@ export function Login() {
     setIsSubmitting(true);
   };
 
+  const handleCreate = (e) => {
+    e.preventDefault();
+  };
+
   //form validation handler
   const validate = (values) => {
     let errors = {};
@@ -138,17 +142,15 @@ export function Login() {
           {formErrors.password && <span>{formErrors.password}</span>}
         </div>
         <div className={styles.formInput}>
+          <h3>
+            Não possui um usuário?
+            <Link to="/createUser">Registre-se aqui!</Link>
+          </h3>
+        </div>
+        <div className={styles.formInput}>
           <button type="submit">Entrar</button>
         </div>
       </form>
-      <div className={styles.formInput}>
-        <h3>
-          Não possui um usuário?
-          <a href="https://todone-cli.onrender.com/createUser">
-            Registre-se aqui!
-          </a>
-        </h3>
-      </div>
     </div>
   );
 }
