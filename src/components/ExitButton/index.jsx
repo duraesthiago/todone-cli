@@ -1,5 +1,5 @@
 import styles from './exit.module.css';
-import { AiOutlineLogout } from 'react-icons/ai';
+import { SlLogout } from 'react-icons/sl';
 
 export function ExitButton() {
   function handleSubmit() {
@@ -11,7 +11,7 @@ export function ExitButton() {
     <div className={styles.buttonContainer}>
       <form onSubmit={handleSubmit} action="/">
         <button className={styles.exitButton}>
-          <AiOutlineLogout size={30} />
+          <SlLogout size={30} />
         </button>
       </form>
     </div>
