@@ -7,9 +7,11 @@ export function Header({ onAddTask }) {
   const [taskText, setTaskText] = useState('');
 
   function handleSubmit(event) {
+    event.preventDefault();
     if (taskText) {
-      event.preventDefault();
       onAddTask(taskText);
+      setTaskText('');
+    } else {
       setTaskText('');
     }
   }
