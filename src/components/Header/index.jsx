@@ -18,7 +18,7 @@ export function Header({ onAddTask }) {
 
   return (
     <header className={styles.header}>
-      <img src={logo} alt="" />
+      <object src={logo} alt="" />
 
       <form
         onSubmit={handleSubmit}
