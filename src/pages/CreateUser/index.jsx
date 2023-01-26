@@ -75,6 +75,10 @@ export function CreateUser() {
     let errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
+    if (!values.name) {
+      errors.name = 'Esse campo não pode ser vazio!';
+    }
+
     if (!values.email) {
       errors.email = 'Digite um e-mail válido';
     } else if (!regex.test(values.email)) {
