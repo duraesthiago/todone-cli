@@ -1,25 +1,26 @@
 .tasks {
   width: 100%;
   max-width: 736px;
-  margin: 0 auto;
-  margin-top: 90px;
+  margin: 60px auto;
   padding: 0 1rem;
 }
 
-.header {
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  width: 100%;
+  max-width: 736px;
 }
 
-.header > div {
+.footer > div {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.header p {
+.footer p {
   color: #4ea8de;
   font-size: 14px;
   font-weight: 700;
@@ -29,7 +30,7 @@
   color: #8284fa !important;
 }
 
-.header span {
+.footer span {
   background: #333333;
   color: #d9d9d9;
   padding: 3px 9px;
@@ -38,8 +39,18 @@
   font-weight: 700;
 }
 
+.footerContainer {
+  background: #191919;
+  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 700px;
+}
+
 .list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 30px;
 }

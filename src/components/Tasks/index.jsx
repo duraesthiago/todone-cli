@@ -1,5 +1,6 @@
 import { Task } from '../Task';
 import styles from './tasks.module.css';
+import { ExitButton } from '../../components/ExitButton';
 
 export function Tasks({ tasks, onComplete, onDelete }) {
   const tasksQuantity = tasks.length;
@@ -8,19 +9,7 @@ export function Tasks({ tasks, onComplete, onDelete }) {
   ).length;
 
   return (
-    <section className={styles.tasks}>
-      <header className={styles.header}>
-        <div>
-          <p>Tarefas criadas</p>
-          <span>{tasksQuantity}</span>
-        </div>
-        <div>
-          <p className={styles.textPurple}>Completas</p>
-          <span>
-            {tasksCompleted} of {tasksQuantity}
-          </span>
-        </div>
-      </header>
+    <div className={styles.tasks}>
       <div className={styles.list}>
         {tasks.map((task) => (
           <Task
@@ -31,6 +20,21 @@ export function Tasks({ tasks, onComplete, onDelete }) {
           />
         ))}
       </div>
-    </section>
+      <footer className={styles.footerContainer}>
+        <div className={styles.footer}>
+          <div>
+            <p>Tarefas criadas</p>
+            <span>{tasksQuantity}</span>
+          </div>
+          <div>
+            <p className={styles.textPurple}>Completas</p>
+            <span>
+              {tasksCompleted} of {tasksQuantity}
+            </span>
+          </div>
+        </div>
+        <ExitButton />
+      </footer>
+    </div>
   );
 }

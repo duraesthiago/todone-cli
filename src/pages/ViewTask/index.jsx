@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
 import { Tasks } from '../../components/Tasks';
-import { ExitButton } from '../../components/ExitButton';
 import axios from 'axios';
 
 const urlBase = 'https://todone-api.fly.dev';
@@ -145,7 +144,6 @@ export function ViewTask() {
         onComplete={toggleTaskCompletedById}
         onDelete={deleteTaskById}
       />
-      <ExitButton />
     </>
   );
 }
