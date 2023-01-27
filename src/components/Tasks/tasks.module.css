@@ -41,7 +41,6 @@
 
 .footerContainer {
   background: #191919;
-  position: sticky;
   bottom: 0;
   width: 100%;
   max-width: 736px;
