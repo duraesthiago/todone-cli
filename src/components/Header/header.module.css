@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: 200px;
-  position: -webkit-sticky; /* Necessário para funcionar no Safari */
   position: sticky;
   top: 0;
 }

@@ -41,7 +41,6 @@
 
 .footerContainer {
   background: #191919;
-  position: -webkit-sticky; /* Necessário para funcionar no Safari */
   position: sticky;
   bottom: 0;
   width: 100%;
