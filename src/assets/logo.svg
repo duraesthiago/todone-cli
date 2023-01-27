@@ -15,16 +15,16 @@
       }
 
       .f {
-        font-size: 398.75px;
+        font-size: 358.75px;
       }
 
       .f, .d {
-        font-family: Poppins-Black, Poppins;
+        font-family: Verdana-Black, Verdana;
         font-weight: 800;
       }
 
       .d {
-        font-size: 389.57px;
+        font-size: 359.57px;
       }
     </style>
   </defs>

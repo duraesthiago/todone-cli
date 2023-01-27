@@ -19,7 +19,7 @@
       }
 
       .f, .d {
-        font-family: Poppins-Black, Poppins;
+        font-family: Verdana-Black, Verdana;
         font-weight: 800;
       }
 
